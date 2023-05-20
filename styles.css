@@ -1,0 +1,398 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    background: #D6BCFF;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+  
+  .bottomText > p {
+    color: #6F3CFF;
+    font-family: 'DM Sans';
+    margin-top: 60px;
+  }
+  
+  .labelpeople > p {
+    color: red;
+  }
+  
+  .mainContainer {
+    background-color: #fff;
+    border-radius: 21px;
+    padding: 22px;
+    padding-bottom: 30px;
+    
+  }
+  
+  .topSection {
+    padding: 44px;
+  }
+  
+  .labelbill{
+     font-family: 'Inconsolata';
+    font-style: normal;
+    color: #9C60FF;
+    font-weight: 800;
+    font-size: 15px;
+    letter-spacing: 0.045em;
+    margin-bottom: 11px;
+    line-height: 16px;
+
+}
+  .labeltip{
+    font-family: 'Inconsolata';
+    font-style: normal;
+    color: #9C60FF;
+    font-weight: 800;
+    font-size: 15px;
+    letter-spacing: 0.045em;
+    margin-bottom: 17px;
+    line-height: 16px;
+  }
+  .labelpeople {
+    font-family: 'Inconsolata';
+    font-style: normal;
+    color: #9C60FF;
+    font-weight: 800;
+    font-size: 15px;
+    letter-spacing: 0.045em;
+    margin-bottom: 7px;
+    line-height: 16px;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 132px;
+    margin-bottom: 70px;
+    color: #6F3CFF;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 2rem;
+    letter-spacing: 0.400em;
+  }
+  
+  .inputContainer {
+    position: relative;
+}
+
+.inputContainer>input {
+    margin-block: 0 30px;
+ justify-content: center;
+    padding: 10px;
+    width: 337px;
+    border: none;
+    border-radius: 3px;
+    background: rgba(182, 172, 196, 0.53);
+    text-align: right;
+    cursor: pointer;
+    font-family: 'Monospaceland';
+    font-weight: 700;
+    color: #9C60FF;
+    font-size: 21px;
+
+}
+
+input[type=number] {
+    appearance: textfield;
+}
+/*removes the upward and downwad counter button in the input field*/
+
+.inputContainer>input:focus {
+    outline: none;
+}
+.inputContainer>img {
+    position:absolute;
+    top: 15px;
+    left: 40px;
+}
+  .btnContainer {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    margin-bottom: 40px;
+  }
+  .btnContainer > button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #9C60FF;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Space Mono', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  .btnContainer > button.active {
+    background-color: #9C60FF;
+  }
+  
+  .btnContainer > input {
+    border: none;
+    padding: 10px;
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 5px;
+  }
+  
+  .peoplewrapper {
+    position: relative;
+  }
+  
+  .peoplewrapper>input {
+
+    margin-block: 10px 20px;
+    padding: 10px;
+    font-size: 16px;
+    width: 240px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(182, 172, 196, 0.53);
+    text-align: right;
+    cursor: pointer;
+    font-family: 'Space Mono', sans-serif;
+    font-weight: 700;
+    /*color: hsl(183, 100%, 15%);*/
+    font-size: 18px;
+    color: #9C60FF;
+
+}
+/*
+  .peoplewrapper > input {
+    padding-left: 40px;
+    padding-right: 20px;
+  }
+  */
+  .peoplewrapper > input:focus {
+    outline: none;
+  }
+  
+  .peoplewrapper>img {
+    position: absolute;
+    top: 24px;
+    left: 20px;
+}
+
+.peoplewrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.peoplewrapper input {
+    padding-right: 100px;
+   
+}
+
+.peoplewrapper .buttons {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    bottom: 0;
+    width: 80px;
+    height: 40px;
+  display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.peoplewrapper .buttons button {
+    width: 100%;
+    background-color: white;
+}
+ 
+  .generateContainer .generateBill {
+    width: 350px;
+    color: #8F8F8F;
+    background: #FBFAFB;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.43);
+    border-radius: 9px;
+    height: 46px;
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 19px;
+    line-height: 20px;
+    margin-bottom: 44px;
+    text-align: center;
+    letter-spacing: 0.02em;
+  }
+  
+  .generateContainer .generateBill.enabled {
+    background: #FFFFFF;
+    color: #9C60FF;
+  }
+  
+  .bottomSection {
+    background: #9C60FF;
+    border: none;
+    border-radius: 20px;
+    padding-block: 50px 40px;
+    padding-inline: 40px;
+  }
+  
+  .desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  
+  .desc > p {
+    font-size: 20px;
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0.045em;
+    color: #F3E4FF;
+    text-align: left;
+  }
+  
+  .desc > p > span {
+    opacity: 0.3;
+    font-size: 18px;
+    text-align: left;
+  }
+  
+  .desc > div {
+    color: #C39FFF;
+    font-weight: 700;
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: 0.01em;
+    margin-left: 122px;
+  }
+  
+  .reset {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #C39FFF;
+    font-size: 16px;
+    color: #9C60FF;
+    font-weight: 700;
+    width: 295px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .resetContainer .reset {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .reset.enabled {
+    background: #9C60FF;
+    color: #FFFFFF;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .mainContainer {
+      display: flex;
+      width: 920px;
+      height: 552px;
+      margin: 0 auto;
+      box-shadow: -1px 6px 55px rgba(0, 0, 0, 0.16);
+    }
+  
+    .topSection {
+      width: 50%;
+    }
+  
+    .bottomSection {
+      display: flex;
+      width: 50%;
+      margin-block: 35px;
+      margin-right: 35px;
+      padding-block: 50px 20px;
+      padding-inline: 20px;
+      position: relative;
+    }
+
+    .desc {
+      padding-inline: 25px;
+    }
+  
+    .reset {
+      position: absolute;
+      bottom: 40px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 355px;
+    }
+  
+    .btnContainer {
+      grid-template-columns: 1fr 1fr 1fr;
+      margin-bottom: 0;
+    }
+  
+    .btn {
+      width: 115px;
+    }
+  
+    .btnContainer > input {
+      width: 95px;
+    }
+  
+    .generateBill {
+      padding: 15px;
+      border: none;
+      border-radius: 5px;
+      background: #C39FFF;
+      font-size: 16px;
+      color: #9C60FF;
+      font-weight: 700;
+      width: 100%;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+  
+  @media screen and (max-width: 600px) {
+    .topSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }/**/
+
+    .bottomSection {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .inputContainer > input {
+        width: 100%;
+        margin: 0;
+      }/**/
+    .peoplewrapper > input {
+      width: 100%;
+      margin: 0;
+    }
+
+  
+    .btnContainer {
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+      margin-bottom: 20px;
+    }
+  }
+}
+  .generateBill.enabled {
+    background: #FFFFFF;
+    color: #9C60FF;
+  }

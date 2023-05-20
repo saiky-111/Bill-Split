@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>BILL SPLIT</title>
+
+</head>
+
+<body>
+    <div class="header">
+        <h2>BILL</h2>
+        <h2>SPLIT</h2>
+    </div>
+
+    <div class="mainContainer">
+        <div class="topSection">
+            <div class="labelbill">
+                <label for="input">Bill</label>
+            </div>
+
+            <div class="inputContainer">
+                <input type="number" placeholder="0" id="input">
+                <img src="./images/icon-rupees.svg" alt="rupees-icon" />
+            </div>
+
+            <div class="labeltip">
+                <label for="customTip">Select Tip %</label>
+            </div>
+
+            <div class="btnContainer">
+                <button class="btn">5%</button>
+                <button class="btn">10%</button>
+                <button class="btn active">15%</button>
+                <button class="btn">25%</button>
+                <button class="btn">50%</button>
+                <input type="number" placeholder="Custom" id="customTip" />
+            </div>
+
+            <div class="labelpeople">
+                <label for="people">Number of People</label>
+                <p id="error"></p>
+            </div>
+
+            <div class="peoplewrapper">
+                <input type="number" id="people" placeholder="1">
+                <img src="./images/icon-person.svg" alt="person">
+                <div class="buttons">
+                    <button onclick="increment()">+</button>
+                    <button onclick="setValueToZero()">0</button>
+                    <button onclick="decrement()">-</button>
+                </div>
+            </div>
+
+
+            <div class="generateContainer">
+                <button class="generateBill">Generate Bill</button>
+            </div>
+
+        </div>
+        
+        <div class="bottomSection">
+            <div class="Amount">
+                <div class="desc">
+                    <p>Tip Amount <br /> <span>/ person</span></p>
+                    <div class="tipValue">₹0.00</div>
+                </div>
+                <div class="desc">
+                    <p>Total <br /> <span>/ person</span></p>
+                    <div class="tipValue">₹0.00</div>
+                </div>
+            </div>
+
+            <div class="resetContainer">
+                <button class="reset">RESET</button>
+            </div>
+           
+        </div>
+    </div>
+    <div class="bottomText">
+        <p> Made with ❤️ by <a style="text-decoration:none" href="www.linkedin.com/in/saiky111">Saikat</a></p>
+    </div> 
+    <script src="./main.js"></script>
+</body>
+
+</html>
