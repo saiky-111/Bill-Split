@@ -22,13 +22,13 @@
   .mainContainer {
     background-color: #fff;
     border-radius: 21px;
-    padding: 22px;
+    padding: 7px;/*22px*/
     padding-bottom: 30px;
     
   }
   
   .topSection {
-    padding: 44px;
+    padding: 22px;
   }
   
   .labelbill{
@@ -86,7 +86,7 @@
 .inputContainer>input {
     margin-block: 0 30px;
  justify-content: center;
-    padding: 10px;
+    padding: 7px;
     width: 337px;
     border: none;
     border-radius: 3px;
@@ -111,7 +111,7 @@ input[type=number] {
 .inputContainer>img {
     position:absolute;
     top: 15px;
-    left: 40px;
+    left: 35px;    
 }
   .btnContainer {
     display: grid;
@@ -396,3 +396,4 @@ input[type=number] {
     background: #FFFFFF;
     color: #9C60FF;
   }
+
